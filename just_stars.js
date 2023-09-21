@@ -101,3 +101,15 @@ window.addEventListener("resize", () => {
     setCanvasExtents();
 });
 
+    // Get references to the menu elements
+    const menuToggle = document.getElementById("hamburger-menu");
+    const menu = document.getElementById("menu");
+    
+    // Add a click event listener to the menu toggle button
+    menuToggle.addEventListener("click", () => {
+        // Toggle the 'active' class to show/hide the menu
+        menu.classList.toggle("active");
+    
+        // Rotate the bars for the animation effect
+        menuToggle.classList.toggle("active");
+    });

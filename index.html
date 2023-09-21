@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet"/>
   <title>Ryan Leigh</title>
 </head>
+
 <body class="body">
     <canvas id="canvas" class="stretch"></canvas>
     <div id="crawl-container" class="stretch">
@@ -40,7 +41,22 @@
     <div id="front-page-content" style="display:none">
       <header>
         <nav>
-            <ul>
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar">
+                <div class="hilt">
+                    <div class="gap"></div>
+                </div>
+                <div class="saber"></div>
+            </div>
+            <div class="bar"></div>
+            <div class="bar">
+                <div class="hilt">
+                    <div class="gap"></div>
+                </div>
+                <div class="blue-saber"></div>
+            </div>
+        </div>
+            <ul class="menu" id="menu">
               <li><a id="header-glow" href="index.html">Home</a></li>
               <li><a id="header-glow" href="about_me.html">About Me</a></li>
               <li><a id="header-glow" href="projects.html">Projects</a></li>
@@ -49,9 +65,11 @@
               <li><a id="header-glow" href="resume.html">Resume</a></li>
               <li><a id="header-glow" href="contact_me.html">Contact Me</a></li>
             </ul>
+            
         </nav>
     </header>
-
+    <script src="script.js"></script>
+    <script src="just_stars.js"></script>
     <div class="text-box">
       <div class="vertical-container">
         <h1>
@@ -70,13 +88,11 @@
         </p>
       </div>
       <div>
-      <img src="Misc/Capture.PNG" width="30%" height="auto" alt="My beautiful face" id="hero-image">
-      <p>Me and some of my friends in the Data Acquisition subteam in Sun Devil Motorsports</p>
+      <img src="Misc/Capture.PNG" alt="My beautiful face" id="hero-image">
+      <p>Me and some of my friends in the Data Acquisition subteam at Sun Devil Motorsports</p>
     </div>
     </div>
   </div>
 </div>
-
-  <script src="script.js"></script>
 </body>
 </html>

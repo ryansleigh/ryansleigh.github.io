@@ -21,6 +21,9 @@ const canvas = document.getElementById("canvas");
     const frontPageContent = document.getElementById("front-page-content");
     //frontPageContent.style.display = 'none';
 
+    const body = document.querySelectorAll(".body");
+    const stretch = document.querySelectorAll(".stretch")
+
     // start crawl at bottom of 3d plane
     let crawlPos = crawl.clientHeight;
 
@@ -78,7 +81,15 @@ let animationRun = true;
     frontPageContent.style.display = 'block';
     console.log('Title Crawl Skipped');
     animationRun = false;
-
+    body.forEach(function(element) {
+      element.style.position = "sticky";
+      element.style.overflow = "auto";
+  });
+    stretch.forEach(function(element) {
+      element.style.overflow = "auto";
+      //element.style.position = "sticky"
+    });
+    //crawl.style.overflow = "auto";
   }
 
 
@@ -147,6 +158,21 @@ access=true;
     };
   
     requestAnimationFrame(init);
+
+
+    // Get references to the menu elements
+const menuToggle = document.getElementById("hamburger-menu");
+const menu = document.getElementById("menu");
+
+// Add a click event listener to the menu toggle button
+menuToggle.addEventListener("click", () => {
+    // Toggle the 'active' class to show/hide the menu
+    menu.classList.toggle("active");
+
+    // Rotate the bars for the animation effect
+    menuToggle.classList.toggle("active");
+});
+
   
 
 
