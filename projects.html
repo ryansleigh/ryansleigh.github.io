@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2T6RVDG8B9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2T6RVDG8B9');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -48,7 +59,7 @@
                         <p style="font-size: 20px;">August 2022-May 2023</p>
                     </div>
                     <div class="horizontal-container" id="about-me-horiz">
-                        <img src="Misc\usgs.PNG" alt="USGS Single Pane of Glass" width="50%">
+                        <img src="Misc\usgs.PNG" alt="USGS Single Pane of Glass" id="project-image">
                         <div class="vertical-container" id="FRC">
                             <p>
                                 My time as a research intern at the USGS, we worked on a solution to develop a
@@ -73,7 +84,7 @@
                         <p style="font-size: 20px;">January 2023</p>
                     </div>
                     <div class="horizontal-container" id="about-me-horiz">
-                        <div class="vertical-container">
+                        <div class="vertical-container" id="child1">
                             <p>
                                 My project with JavaFX chess is a fully functioning chess game programmed in Java using JavaFX as the graphical utility.
                                 The main programming concepts used are inheritance and abstract classes. Every piece is a subclass of the abstract class Piece. This enables code reuse to a great capacity.
@@ -83,8 +94,8 @@
                                 I am most proud of this project as it was a bit of a struggle at times especially when trying to debug a fairly large project such as this one. It also affirms
                                 my affection for the game of chess. I play chess fairly regularly but don't ask to play me. I'm not that good :(
                             </p>
-                        </div>
-                        <img src="Misc/chess.PNG" alt="chess" width="50%">
+                        </div id="child2">
+                        <img src="Misc/chess.PNG" alt="chess" id="project-image">
                     </div>
                 </div>
             </div>
@@ -95,7 +106,7 @@
                         <p style="font-size: 20px;">August 2021-May 2022</p>
                     </div>
                     <div class="horizontal-container" id="about-me-horiz">
-                        <img src="Misc/robotics.PNG" alt="chess" width="50%">
+                        <img src="Misc/robotics.PNG" alt="chess" id="project-image">
                         <div class="vertical-container" id="FRC">
                             <p>
                                 During my high school years, I was the programmer for my robotics high school team. I programmed an autonomous and tele-operable
