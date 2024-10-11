@@ -159,7 +159,7 @@ nav ul li a {
 #iframe {
   position: relative;
   width: 800px;
-  height: auto;
+  height: 1080px;
   border: none; /* Remove any iframe border */
 }
 
@@ -351,12 +351,12 @@ nav ul li a {
     .horizontal-container {
       font-size: 20px;
       flex-direction: column;
-      padding: 10px;
+      padding: 5px;
     }
     .vertical-container {
       font-size: 20px;
       flex-direction: column;
-      padding: 10px;
+      padding: 5px;
     }
     #clubs {
       display: block;
@@ -365,9 +365,9 @@ nav ul li a {
       text-align: center;
       flex-direction: column;
       align-items: center;
-      padding: 10px;
-      margin-left: 40px;
-      margin-right: 40px;
+      padding: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
     #hero-image {
       width: 100%;
@@ -420,6 +420,14 @@ nav ul li a {
 
   .hamburger-menu.active .bar:nth-child(3) {
       transform: rotate(-135deg) translate(8px, 17px);;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
   }
     /* Adjust other styles as needed */
 }
