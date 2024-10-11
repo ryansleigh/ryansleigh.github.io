@@ -236,7 +236,7 @@ nav ul li a {
   #crawl-content {
     font-family: "Roboto";
     font-size: calc(100vw * 0.074);
-    letter-spacing: 0.09em;
+    letter-spacing: 0.04em;
     position: absolute;
     top: 0px;
     left: 0px;

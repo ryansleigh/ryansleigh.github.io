@@ -77,6 +77,8 @@ const canvas = document.getElementById("canvas");
 
 let animationRun = true;
   function skipTitleCrawl() {
+    window.location.href = 'about_me.html';
+    /*
     crawlContent.style.display = 'none';
     frontPageContent.style.display = 'block';
     console.log('Title Crawl Skipped');
@@ -90,6 +92,7 @@ let animationRun = true;
       //element.style.position = "sticky"
     });
     //crawl.style.overflow = "auto";
+    */
   }
 
 
